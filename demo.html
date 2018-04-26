@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>修改滚动条</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html,body{
+      height: 100%;
+    }
+
+    .scroll-scroll-ani{
+      transition: transform .3s linear;
+    }
+
+    .scroll1{
+      margin: 0 auto;
+      width: 500px;
+      height: 300px;
+      overflow-y: hidden;
+      position: relative;
+      padding-right: 6px;
+    }
+    .scroll1 .scrollbar{
+      width: 6px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .scroll1 .scrollbar .scroll-thumb{
+      position: absolute;
+      width: 6px;
+      background: #666;
+      height: 50px;
+      border-radius: 10px;
+    }
+    .scroll1 .scrollbar .scroll-track{
+      width: 2px;
+      height: 100%;
+      background: #ddd;
+      margin: 0 auto;
+    }
+
+    .scroll2{
+      width: 900px;
+      height: 500px;
+      overflow-y: hidden;
+      position: relative;
+      padding-right: 10px;
+    }
+    .scroll2 .scrollbar{
+      width: 10px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .scroll2 .scrollbar .scroll-thumb{
+      position: absolute;
+      width: 10px;
+      background: #000;
+      height: 50px;
+      border-radius: 10px;
+    }
+    .scroll2 .scrollbar .scroll-track{
+      width: 5px;
+      height: 100%;
+      background: #ddd;
+      margin: 0 auto;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="scrollbar-container scroll1">
+    <div class="scrollbar">
+      <div class="scroll-thumb"></div>
+      <div class="scroll-track"></div>
+    </div>
+    <ul class="content1">
+      <li>
+        <p style="color: red">头部</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p style="color: red">尾部</p>
+      </li>
+    </ul>
+  </div>
+  <br/><br/><br/><br/><br/><br/><br/>
+  <div class="scrollbar-container scroll2">
+    <div class="scrollbar">
+      <div class="scroll-thumb"></div>
+      <div class="scroll-track"></div>
+    </div>
+    <ul class="content2">
+      <li>
+        <p style="color: red">头部</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p>这是一段文字</p>
+      </li>
+      <li>
+        <p style="color: red">尾部</p>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./ScrollBar.js"></script>
+  <script>
+    window.onload = function(){
+      new ScrollBar({
+        el: '.content1',
+        moveDist: 50
+      })
+      new ScrollBar({
+        el: '.content2',
+        moveDist: 50
+      })
+    }    
+  </script>
+</body>
+</html>
